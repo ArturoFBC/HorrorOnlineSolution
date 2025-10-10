@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Búsqueda";
+}
+
+
+	<div class="story-card flex flex-column gap-16 justify-self-center search-form align-items-center">
+		<h1>Búsqueda</h1>
+		<form asp-controller="Home" asp-action="SearchResults" method="get" >
+			<div class="flex gap-16">
+
+				@*
+					<select id="searchField" class="base-font">
+					<option value="title">Título</option>
+					<option value="tag">Tag</option>
+					<option value="author">Autor</option>
+				</select>
+				*@
+				<input class="base-font" type="search" id="search" name="searchTerm" placeholder="búsqueda"/>
+				<button class="flex">
+					<img class="search-icon" src="/media/img/magnifying-glass-solid-full.svg" />
+				</button>
+
+			</div>
+		</form>
+	</div>

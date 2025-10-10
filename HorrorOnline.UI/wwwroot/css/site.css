@@ -1,0 +1,315 @@
+/* CSS styles */
+:root {
+    /* CSS colors */
+    --dark-purple: #272330;
+    --dark-purple-gradient: #171516;
+    --pale-purple: #867;
+    --orange: #FF7700;
+    --orange-alpha: rgba(255, 127, 0, 0.5);
+    --dark-orange: #AA5500;
+
+}
+
+@font-face {
+    font-family: SourceSerif;
+    src: url(/fonts/SourceSerifPro-Regular.otf);
+    font-weight: normal, bold;
+}
+
+.test-red {
+    background-color: red;
+}
+
+html {
+    background-image: linear-gradient(to top, var(--dark-purple-gradient), var(--dark-purple));
+    background-attachment: fixed;
+    box-shadow: 0 0 100px 50px rgba(17,15,20,0.3) inset;
+}
+
+html, body {
+    max-width: 1536px;
+    margin: auto;
+    overflow: clip;
+}
+
+html{
+    height: 100%
+}
+
+body {
+    height: 100%;
+
+    font-family: SourceSerif, Georgia, serif;
+}
+
+h1 {
+    font-family: "New Rocker", serif;
+    font-weight: normal;
+    text-shadow: 3px 3px 5px rgba(255, 127, 0, 0.7);
+    margin: 8px 0px 8px 0px;
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-white {
+    color: WhiteSmoke;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.icon {
+    height: 32px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+.gap-8 {
+    gap: 8px;
+}
+
+.w-stretch{
+    width:stretch;
+}
+
+.base-font {
+    font-family: SourceSerif, Georgia, serif;
+    font-size: 20px;
+}
+
+/* HEADER */
+header {
+    margin: auto;
+    height: 108px;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    padding: 16px;
+    height: 65%;
+}
+
+.hamburger-icon {
+    aspect-ratio: 1;
+    justify-content: space-between;
+    height: 35%;
+    padding: 32px;
+    display: none;
+}
+
+.hamburger-icon > div{
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 2px inset grey;
+    width:  stretch;
+    height: 15%;
+}
+
+.topbar-icon {
+    padding: 24px;
+    height: 45%;
+}
+
+.navbar-icon {
+    padding-right: 4px;
+    color: rgb(255,255,255);
+    height: 24px;
+}
+
+.navbar {
+    flex-grow: 1;
+    height: 48px;
+}
+
+.navbar-item {
+    margin: 8px;
+}
+
+    .navbar-item:hover {
+        text-shadow: 0px 0px 5px WhiteSmoke;
+    }
+
+.navbar-text {
+    font-size: 22px;
+}
+
+.navbar-item-selected {
+    text-shadow: 0px 0px 5px var(--orange);
+}
+
+    .navbar-item-selected img {
+        box-shadow: 0px 0px 3px var(--orange);
+    }
+
+    .navbar-item-selected svg {
+        filter: drop-shadow(0px 0px 3px var(--orange));
+    }
+
+
+
+    /* TODO: When changing image to icon, swap IMG with I */
+    .navbar-item:hover img {
+        box-shadow: 0px 0px 3px WhiteSmoke;
+    }
+
+    .navbar-item:hover svg {
+        filter: drop-shadow(0px 0px 3px WhiteSmoke);
+    }
+
+
+
+/* CONTENT */
+.content {
+    max-width: 1024px;
+    width: stretch;
+    height: calc(100vh - 124px);
+    overflow-y : auto;
+    padding: 8px 16px;
+    scrollbar-color: var(--dark-purple) var(--pale-purple);
+}
+
+.tag-list{
+    padding: 2px;
+}
+
+.tag {
+    background-color: var(--dark-orange);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 2px 6px 2px 6px;
+}
+
+.summary {
+    max-height: 7em;
+    overflow: hidden;
+}
+
+.story-card {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--dark-orange);
+    padding: 32px 32px 32px 32px;
+}
+
+.text-display {
+    text-indent: 30px;
+}
+
+    .text-display > p {
+        margin: 0.5em 0px;
+    }
+
+/* Búsqueda */
+.search-form{
+    margin: 16px;
+}
+
+button {
+    background-color: var(--dark-purple);
+    caret-color: var(--orange);
+    border-color: var(--dark-orange);
+    border-style: solid;
+    box-shadow: 0px 0px 3px var(--orange);
+    padding: 4px;
+}
+
+    button:hover {
+        box-shadow: 0px 0px 6px var(--dark-orange);
+    }
+
+    button:active {
+        box-shadow: 0px 0px 6px whitesmoke;
+    }
+
+select, input, textarea {
+    color: whitesmoke;
+    border-color: var(--dark-orange);
+    background-color: var(--dark-purple);
+    border-style: solid;
+    font-family: SourceSerif, Georgia, serif;
+    font-size: 20px;
+}
+
+textarea {
+    width: stretch;
+    resize:vertical;
+}
+
+.search-icon {
+    height: 20px;
+}
+
+/* Create story form */
+.story-text-input{
+    height: 10em;
+}
+
+.margin-bottom-8 {
+    margin-bottom: 8px;
+}
+
+/* Text message */
+.text-message{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar.responsive {
+        display: none;
+    }
+
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+}

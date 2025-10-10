@@ -1,0 +1,16 @@
+﻿@model IEnumerable<StoryResponse>
+@{
+    ViewData["Title"] = "Populares";
+}
+
+@if (Model == null || Model.Count() == 0)
+{
+	<span class="text-message justify-center">No se encontraron relatos.</span>
+}
+else
+{
+	@foreach (StoryResponse story in Model)
+	{
+		<partial name="PartialViews/StoryPartialView" model="story" />
+	}
+}

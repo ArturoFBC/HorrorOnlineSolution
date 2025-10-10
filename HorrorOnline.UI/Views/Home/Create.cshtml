@@ -1,0 +1,35 @@
+﻿@model StoryWithTagsModel
+@{
+	ViewBag.Title = "Subir relato";
+}
+
+
+<form asp-controller="Home" asp-action="Create" method="post" class="flex wrap gap-16 flex-column align-items-center justify-self-center">
+
+	<h1>Subir relato</h1>
+
+	<div class="flex gap-16 margin-bottom-8 w-stretch">
+		<label asp-for="Title"></label>
+		<input asp-for="Title" class="w-stretch"></input>
+	</div>
+
+	<label asp-for="Summary" ></label>
+	<textarea asp-for="Summary" class="margin-bottom-8"></textarea>
+
+	<label asp-for="Text"></label>
+	<textarea asp-for="Text" class="story-text-input margin-bottom-8"></textarea>
+
+	<div class="flex gap-16 margin-bottom-8 w-stretch">
+		<label asp-for="Tags"></label>
+		<input asp-for="Tags" class="w-stretch"></input>
+	</div>
+
+	<button type="submit" class="base-font text-white">Mandar relato</button>
+	@if (ViewBag.Errors != null)
+	{
+		@foreach (string error in ViewBag.Errors)
+		{
+			<p style="color:red">@error</p>
+		}
+	}
+</form>

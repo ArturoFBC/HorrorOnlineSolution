@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorOnline.UI", "HorrorOnline.UI\HorrorOnline.UI.csproj", "{F8A79ECB-003F-45AD-9D87-415D5C527623}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorOnline.Core", "HorrorOnline.Core\HorrorOnline.Core.csproj", "{8567B4FE-5E33-4F54-B588-860902171CBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorOnline.Infrastructure", "HorrorOnline.Infrastructure\HorrorOnline.Infrastructure.csproj", "{036D27BB-BE1C-489E-B609-09ED3EFA6135}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB5A0BF9-EE5F-439A-9EBC-50835451627B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorOnline.ServiceTest", "HorrorOnline.ServiceTest\HorrorOnline.ServiceTest.csproj", "{A20AEC28-3E13-4C97-A111-208A8241F57A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8A79ECB-003F-45AD-9D87-415D5C527623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A79ECB-003F-45AD-9D87-415D5C527623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A79ECB-003F-45AD-9D87-415D5C527623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A79ECB-003F-45AD-9D87-415D5C527623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8567B4FE-5E33-4F54-B588-860902171CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8567B4FE-5E33-4F54-B588-860902171CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8567B4FE-5E33-4F54-B588-860902171CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8567B4FE-5E33-4F54-B588-860902171CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036D27BB-BE1C-489E-B609-09ED3EFA6135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036D27BB-BE1C-489E-B609-09ED3EFA6135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036D27BB-BE1C-489E-B609-09ED3EFA6135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036D27BB-BE1C-489E-B609-09ED3EFA6135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8567B4FE-5E33-4F54-B588-860902171CBA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{A20AEC28-3E13-4C97-A111-208A8241F57A} = {EB5A0BF9-EE5F-439A-9EBC-50835451627B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EAAAA71-E6FD-483E-AEF5-2BDB21B064A0}
+	EndGlobalSection
+EndGlobal

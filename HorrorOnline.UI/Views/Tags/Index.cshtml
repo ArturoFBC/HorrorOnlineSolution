@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TagResponse>
+@{
+    ViewBag.Title = "Etiquetas";
+}
+
+<h1>
+    @ViewBag.Title
+</h1>
+<div class="tag-list flex wrap align-items-center gap-16 text-white">
+    @foreach (TagResponse tagResponse in Model)
+    {
+        <a class="tag" asp-controller="tags" asp-action="tagbyid" asp-route-tagid="@tagResponse.TagId">@tagResponse.TagName</a>
+    }
+</div>
