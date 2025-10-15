@@ -64,9 +64,7 @@ namespace HorrorOnline.Core.DTO
                 Text = story.Text,
                 DateUploaded = story.DateUploaded,
                 Author = Guid.Parse("7382AD97-C28D-445F-8EBF-9F3B2825605B"), // story.Author?.Id,
-                TagIds = [Guid.Parse( "5EE06366-A21B-496F-8B39-4FD0E75C5C31"),
-                    Guid.Parse("49E17F63-2B52-4B62-9FEF-29522E62E059"),
-                    Guid.Parse("427CCDB3-64E6-4796-9B67-BFCA6329C265")], //[.. story.Tags.Select(tag => tag.TagId)]
+                TagIds = story.Tags?.Select(tag => tag.TagId),
                 TagNames = story.Tags?.Select(tag => tag.TagName)
             };
         }

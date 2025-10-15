@@ -18,6 +18,6 @@ namespace HorrorOnline.Core.Domain.Entities
         [Length(MinTagLength, MaxTagLength)]
         public string? TagName { get; set; } = string.Empty;
 
-        public virtual ICollection<Story>? Stories { get; set; }
+        public virtual ICollection<Story>? Stories { get; } = new List<Story>();
     }
 }

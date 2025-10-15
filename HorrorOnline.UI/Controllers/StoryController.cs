@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace HorrorOnline.UI.Controllers
 {
     [Route("[controller]")]
-    public class HomeController : Controller
+    public class StoryController : Controller
     {
         private readonly IStoryAdderService _storyAdderService;
         private readonly IStoryGetterService _storyGetterService;
@@ -18,7 +18,7 @@ namespace HorrorOnline.UI.Controllers
         private readonly ITagAdderService _tagAdderService;
         private readonly ITagGetterService _tagGetterService;
 
-        public HomeController(IStoryAdderService storyAdderService, IStoryGetterService storyGetterService, IStoryDeleterService storyDeleterService, ITagAdderService tagAdderService, ITagGetterService tagGetterService)
+        public StoryController(IStoryAdderService storyAdderService, IStoryGetterService storyGetterService, IStoryDeleterService storyDeleterService, ITagAdderService tagAdderService, ITagGetterService tagGetterService)
         {
             _storyAdderService = storyAdderService;
             _storyGetterService = storyGetterService;
@@ -71,7 +71,6 @@ namespace HorrorOnline.UI.Controllers
             return View();
         }
 
-        // POST: HomeController/Create
         [HttpPost]
         [Route("[action]")]
         [ValidateAntiForgeryToken]
@@ -142,13 +141,11 @@ namespace HorrorOnline.UI.Controllers
         }
         #endregion
 
-        // GET: HomeController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: HomeController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

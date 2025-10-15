@@ -1,0 +1,37 @@
+﻿@model UserAddRequest
+@{
+	ViewBag.Title = "Crear cuenta";
+}
+
+
+<form asp-controller="Account" asp-action="Register" method="post" class="flex wrap gap-16 flex-column align-items-center justify-self-center">
+	<div class="flex gap-16">
+		<h1>Crear cuenta</h1>
+
+		<div class="flex gap-16 margin-bottom-8 w-stretch">
+			<label asp-for="UserName"></label>
+			<input asp-for="UserName" class="w-stretch"></input>
+		</div>
+		<span asp-validation-for="UserName"></span>
+
+		<div class="flex gap-16 margin-bottom-8 w-stretch">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" class="w-stretch"></input>
+		</div>
+		<span asp-validation-for="Email"></span>
+
+		<div class="flex gap-16 margin-bottom-8 w-stretch">
+			<label asp-for="Password"></label>
+			<input asp-for="Password" class="w-stretch"></input>
+		</div>
+		<span asp-validation-for="Password"></span>
+
+		<div class="flex gap-16 margin-bottom-8 w-stretch">
+			<label asp-for="ConfirmPassword"></label>
+			<input asp-for="ConfirmPassword" class="w-stretch"></input>
+		</div>
+		<span asp-validation-for="ConfirmPassword"></span>
+
+		<button type="submit" class="base-font text-white">Mandar relato</button>
+	</div>
+</form>

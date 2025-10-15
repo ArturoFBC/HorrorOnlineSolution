@@ -53,30 +53,44 @@
     <a asp-action="Index">Back to List</a>
 </div>*@
 <div class="story-card flex flex-column gap-16">
-    <h1>
-        @Html.DisplayFor(model => model.Title)
-    </h1>
+
+	<a asp-controller="story" asp-action="details" asp-route-storyid="@Model.StoryId">
+		<h1>
+            @Html.DisplayFor(model => model.Title)
+        </h1>
+    </a>
+    
 	<div class="tag-list flex wrap align-items-center gap-16">
+
+        @{
+            Dictionary<Guid, string> tagDictionary = Model.TagIds.Zip(Model.TagNames, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
+        }
+
 		<img class="icon" src="~/media/img/tags-regular-full.svg" />
-        @foreach (string tag in Model.TagNames)
+        @foreach (KeyValuePair<Guid,string> tagPair in tagDictionary)
         {
-            <span class="tag">
-                @tag
-            </span>
+            <a class="tag" asp-controller="tags" asp-action="tagbyid" asp-route-tagid="@tagPair.Key">
+                @tagPair.Value
+            </a>
         }
     </div>
+
 	<div class="flex wrap align-items-center justify-space-between">
+
 		<div class="flex align-items-center gap-8">
 			<img class="icon" src="~/media/img/pen-nib-regular-full.svg" />
             <span>
                 <b>@Html.DisplayFor(model => model.Author)</b>
             </span>
 		</div>
+
 		<div class="flex align-items-center gap-8">
 			<img class="icon" src="~/media/img/calendar-solid.svg" />
             <span><b>@Html.DisplayFor(model => model.DateUploaded)</b></span>
 		</div>
+
 	</div>
+
     @if (ViewBag.DisplayMode == "full")
     {
         <div class="flex flex-column text-display">

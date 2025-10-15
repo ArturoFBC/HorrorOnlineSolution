@@ -4,7 +4,7 @@
 }
 
 
-<form asp-controller="Home" asp-action="Create" method="post" class="flex wrap gap-16 flex-column align-items-center justify-self-center">
+<form asp-controller="Story" asp-action="Create" method="post" class="flex wrap gap-16 flex-column align-items-center justify-self-center">
 
 	<h1>Subir relato</h1>
 
@@ -12,17 +12,21 @@
 		<label asp-for="Title"></label>
 		<input asp-for="Title" class="w-stretch"></input>
 	</div>
+	<span asp-validation-for="Title"></span>
 
 	<label asp-for="Summary" ></label>
 	<textarea asp-for="Summary" class="margin-bottom-8"></textarea>
+	<span asp-validation-for="Summary"></span>
 
 	<label asp-for="Text"></label>
 	<textarea asp-for="Text" class="story-text-input margin-bottom-8"></textarea>
+	<span asp-validation-for="Text"></span>
 
 	<div class="flex gap-16 margin-bottom-8 w-stretch">
 		<label asp-for="Tags"></label>
 		<input asp-for="Tags" class="w-stretch"></input>
 	</div>
+	<span asp-validation-for="Tags"></span>
 
 	<button type="submit" class="base-font text-white">Mandar relato</button>
 	@if (ViewBag.Errors != null)

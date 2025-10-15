@@ -28,14 +28,13 @@ namespace HorrorOnline.UI.Controllers
             return View(tags);
         }
 
-        /*
-        [HttpGet, Route("/{tagName}")]
+        [HttpGet, Route("{tagName:alpha}")]
         public async Task<ActionResult> TagByName(string tagName)
         {
             TagResponse? tagResponse = await _tagGetterService.GetTagByName(tagName);
 
             return View();
-        }*/
+        }
 
         [HttpGet, Route("{tagId:guid}")]
         public async Task<ActionResult> TagByID(Guid tagId)
