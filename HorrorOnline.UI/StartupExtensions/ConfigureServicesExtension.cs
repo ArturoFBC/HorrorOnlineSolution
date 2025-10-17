@@ -4,10 +4,12 @@ using HorrorOnline.Core.ServiceContracts.Stories;
 using HorrorOnline.Core.ServiceContracts.Tags;
 using HorrorOnline.Core.Services.Stories;
 using HorrorOnline.Core.Services.Tags;
+using HorrorOnline.Infrastructure.DbContext;
 using HorrorOnline.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace HorrorOnline.UI.StartupExtensions
 {
@@ -32,18 +34,7 @@ namespace HorrorOnline.UI.StartupExtensions
                 .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>()
                 .AddDefaultTokenProviders();
 
-            services.AddScoped<IStoryAdderService, StoryAdderService>();
-            services.AddScoped<IStoryGetterService, StoryGetterService>();
-            services.AddScoped<IStoryDeleterService, StoryDeleterService>();
-
-            services.AddSingleton<IStoryRepository, StoryRepository>();
-
-            services.AddScoped<ITagAdderService, TagAdderService>();
-            services.AddScoped<ITagGetterService, TagGetterService>();
-            services.AddScoped<ITagDeleterService, TagDeleterService>();
-
-            services.AddSingleton<ITagRepository, TagRepository>();
-
+            // Authorization
             services.AddAuthorization(options =>
             {
                 options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
@@ -56,6 +47,28 @@ namespace HorrorOnline.UI.StartupExtensions
                     });
                 });
             });
+
+            // Services and repos
+            services.AddScoped<IStoryAdderService, StoryAdderService>();
+            services.AddScoped<IStoryGetterService, StoryGetterService>();
+            services.AddScoped<IStoryDeleterService, StoryDeleterService>();
+
+            services.AddScoped<IStoryRepository, StoryRepository>();
+
+            services.AddScoped<ITagAdderService, TagAdderService>();
+            services.AddScoped<ITagGetterService, TagGetterService>();
+            services.AddScoped<ITagDeleterService, TagDeleterService>();
+
+            services.AddScoped<ITagRepository, TagRepository>();
+
+            // Database
+            if (environment.IsEnvironment("Test") == false)
+            {
+                IServiceCollection serviceCollection = services.AddDbContext<ApplicationDbContext>(options =>
+                {
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+                });
+            }
 
             return services;
         }

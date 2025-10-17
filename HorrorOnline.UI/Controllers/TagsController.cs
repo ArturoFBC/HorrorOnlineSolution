@@ -5,6 +5,7 @@ using HorrorOnline.Core.ServiceContracts.Tags;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HorrorOnline.UI.Controllers
 {
@@ -21,6 +22,7 @@ namespace HorrorOnline.UI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> Index()
         {
             IEnumerable<TagResponse> tags = await _tagGetterService.GetAllTags();
@@ -29,6 +31,7 @@ namespace HorrorOnline.UI.Controllers
         }
 
         [HttpGet, Route("{tagName:alpha}")]
+        [AllowAnonymous]
         public async Task<ActionResult> TagByName(string tagName)
         {
             TagResponse? tagResponse = await _tagGetterService.GetTagByName(tagName);
@@ -37,11 +40,12 @@ namespace HorrorOnline.UI.Controllers
         }
 
         [HttpGet, Route("{tagId:guid}")]
+        [AllowAnonymous]
         public async Task<ActionResult> TagByID(Guid tagId)
         {
             IEnumerable<StoryResponse>? storiesWithTag = await _storyGetterService.GetStoriesByTagId(tagId);
 
-            return View("~/Views/Home/Index.cshtml", storiesWithTag);
+            return View("~/Views/Story/Index.cshtml", storiesWithTag);
         }
     }
 }

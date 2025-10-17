@@ -1,13 +1,14 @@
 ﻿using HorrorOnline.Core.Domain.Entities;
+using HorrorOnline.Core.Domain.Entities.IdentityEntities;
 using HorrorOnline.Core.Domain.RepositoryContracts;
+using HorrorOnline.Infrastructure.DbContext;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace HorrorOnline.Infrastructure.Repositories
 {
@@ -15,91 +16,72 @@ namespace HorrorOnline.Infrastructure.Repositories
     {
         private readonly ITagRepository _tagRepository;
 
-        public static List<Story> Stories = new List<Story>();
+        private readonly ApplicationDbContext _db;
 
-        public StoryRepository(ITagRepository tagRepository)
+
+        public StoryRepository(ApplicationDbContext db, ITagRepository tagRepository)
         {
-            //Seed data
-            string storiesJson = File.ReadAllText("stories.json");
-            Stories = JsonSerializer.Deserialize<List<Story>>(storiesJson);
+            _db = db;
             _tagRepository = tagRepository;
         }
 
         public async Task<Story> AddStory(Story story)
         {
-            Stories.Add(story);
+            await _db.Stories.AddAsync(story);
+            await _db.SaveChangesAsync();
 
             return story;
         }
 
         public async Task<bool> DeleteStoryByID(Guid storyID)
         {
-            Story? foundStory = Stories.Find(item => item.StoryId == storyID);
+            _db.Stories.RemoveRange(_db.Stories.Where(item => item.StoryId == storyID));
 
-            if (foundStory == null)
-            {
-                return false;
-            }
-            else
-            {
-                return Stories.Remove(foundStory);
-            }
+            int rowsDeleted = await _db.SaveChangesAsync();
 
+            return rowsDeleted > 0;
         }
 
         public async Task<IEnumerable<Story>> GetAllStories()
         {
-            foreach (Story story in Stories)
-            {
-                await FillTags(story);
-            }
-
-            return new List<Story>(Stories);
-        }
-
-        private async Task FillTags(Story story)
-        {
-            if (story.Tags == null || story.Tags.Any() == false)
-            {
-                story.Tags = new List<Tag>();
-                foreach (Guid tagId in story.TagIds)
-                {
-                    story.Tags.Add(await _tagRepository.GetTagByID(tagId));
-                }
-            }
+            return await _db.Stories
+                .Include(story => story.Tags)
+                .Include(story => story.Author)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Story>> GetFilteredStories(Expression<Func<Story, bool>> predicate)
         {
-            IEnumerable<Story> filteredStories = Stories.Where(predicate.Compile());
-
-            foreach (Story story in filteredStories)
-            {
-                await FillTags(story);
-            }
+            IEnumerable<Story> filteredStories = await _db.Stories
+                .Where(predicate)
+                .Include(story => story.Tags)
+                .Include(story => story.Author)
+                .ToListAsync();
 
             return filteredStories;
         }
 
         public async Task<Story?> GetStoryByID(Guid storyID)
         {
-            Story? foundStory = Stories.Find(item => item.StoryId == storyID);
-
-            if (foundStory != null)
-                await FillTags(foundStory);
+            Story? foundStory = await _db.Stories
+                .Include(story => story.Tags)
+                .Include(story => story.Author)
+                .FirstOrDefaultAsync(item => item.StoryId == storyID);
 
             return foundStory;
         }
 
         public async Task<IEnumerable<Story>> GetStoryByTag(Guid tagID)
         {
-            IEnumerable<Story> storiesWithTag = Stories.Where( story => 
-            story.TagIds != null && story.TagIds.Contains(tagID));
-
-            foreach (Story story in storiesWithTag)
-            {
-                await FillTags(story);
-            }
+            IEnumerable<Story> storiesWithTag = await _db.Stories
+                .Include(story => story.Tags)
+                .Where( story => 
+                    story.Tags.Any(
+                        tag => tag.TagId == tagID
+                        )
+                    )
+                .Include(story => story.Author)
+                .ToListAsync();
 
             return storiesWithTag;
         }

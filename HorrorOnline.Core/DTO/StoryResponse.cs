@@ -14,27 +14,19 @@ namespace HorrorOnline.Core.DTO
 {
     public class StoryResponse
     {
-        [Required]
         public Guid StoryId { get; set; }
 
-        [Required]
         public string? Title { get; set; }
 
         public string? Summary { get; set; }
 
-        [Required]
         public string? Text { get; set; }
 
-        [Required]
         public DateTime DateUploaded { get; set; }
 
-        [Required]
-        public Guid? Author { get; set; }
+        public string AuthorName { get; set; }
 
-        [Required]
-        public IEnumerable<Guid>? TagIds { get; set; }
-
-        public IEnumerable<string?>? TagNames { get; set; }
+        public IEnumerable<TagResponse>? Tags { get; set; }
 
         public int? Reviews { get; set; }
 
@@ -46,8 +38,8 @@ namespace HorrorOnline.Core.DTO
                 Title = Title,
                 Summary = Summary,
                 Text = Text,
-                Author = Author,
-                TagIds = TagIds,
+            //    Author = AuthorName,
+                Tags = Tags,
             };
         }
     }
@@ -63,9 +55,8 @@ namespace HorrorOnline.Core.DTO
                 Summary = story.Summary,
                 Text = story.Text,
                 DateUploaded = story.DateUploaded,
-                Author = Guid.Parse("7382AD97-C28D-445F-8EBF-9F3B2825605B"), // story.Author?.Id,
-                TagIds = story.Tags?.Select(tag => tag.TagId),
-                TagNames = story.Tags?.Select(tag => tag.TagName)
+                AuthorName = story.Author?.UserName,
+                Tags = story.Tags?.Select(tag => tag.ToTagResponse()),
             };
         }
     }

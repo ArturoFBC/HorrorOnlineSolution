@@ -1,12 +1,6 @@
 ﻿using HorrorOnline.Core.Domain.Entities.IdentityEntities;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HorrorOnline.Core.Domain.Entities
 {
@@ -30,20 +24,18 @@ namespace HorrorOnline.Core.Domain.Entities
         // htmlUtility.htmlenconde(text) converts html as text so is safe to display
         public string? Text { get; set; }
 
-        public IEnumerable<Guid>? TagIds { get; set; }
-
         public Guid? AuthorId { get; set; }
-
-        public IEnumerable<Guid>? reviewIds { get; set; }
 
         public DateTime DateUploaded { get; set; }
 
-        [ForeignKey("UserId")]
+        [ForeignKey("AuthorId")]
         public virtual ApplicationUser? Author { get; set; }
 
         public virtual ICollection<Tag>? Tags { get; set; }
 
         public virtual ICollection<Review>? Reviews { get; set; }
+
+        public virtual ICollection<BookMark>? BookMarks { get; set; }
 
     }
 }

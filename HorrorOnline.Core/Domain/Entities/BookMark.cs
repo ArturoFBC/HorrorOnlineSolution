@@ -21,6 +21,10 @@ namespace HorrorOnline.Core.Domain.Entities
         [Range(1, 1000)]
         public int MarkedLocation { get; set; }
 
+        public Guid? UserId { get; set; }
+
+        public Guid? StoryId { get; set; }
+
         [ForeignKey("StoryId")]
         public virtual Story? Story { get; set; }
 

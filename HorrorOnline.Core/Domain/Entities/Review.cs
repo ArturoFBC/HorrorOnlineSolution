@@ -26,10 +26,12 @@ namespace HorrorOnline.Core.Domain.Entities
 
         public DateTime UpdateDateTime { get; set; }
 
-        [ForeignKey("StoryId")]
+        public Guid? StoryId { get; set; }
+
+        public Guid? AuthorId { get; set; }
+
         public virtual Story? Story { get; set; }
 
-        [ForeignKey("UserId")]
         public virtual ApplicationUser? Author { get; set; }
     }
 }

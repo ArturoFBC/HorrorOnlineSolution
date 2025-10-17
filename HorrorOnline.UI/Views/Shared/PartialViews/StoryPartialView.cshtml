@@ -62,16 +62,16 @@
     
 	<div class="tag-list flex wrap align-items-center gap-16">
 
-        @{
-            Dictionary<Guid, string> tagDictionary = Model.TagIds.Zip(Model.TagNames, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
-        }
-
 		<img class="icon" src="~/media/img/tags-regular-full.svg" />
-        @foreach (KeyValuePair<Guid,string> tagPair in tagDictionary)
+
+        @if (Model.Tags != null)
         {
-            <a class="tag" asp-controller="tags" asp-action="tagbyid" asp-route-tagid="@tagPair.Key">
-                @tagPair.Value
-            </a>
+            @foreach (TagResponse tag in Model.Tags)
+            {
+                <a class="tag" asp-controller="tags" asp-action="tagbyid" asp-route-tagid="@tag.TagId">
+                    @tag.TagName
+                </a>
+            }
         }
     </div>
 
@@ -80,7 +80,7 @@
 		<div class="flex align-items-center gap-8">
 			<img class="icon" src="~/media/img/pen-nib-regular-full.svg" />
             <span>
-                <b>@Html.DisplayFor(model => model.Author)</b>
+                <b>@Html.DisplayFor(model => model.AuthorName)</b>
             </span>
 		</div>
 

@@ -25,7 +25,7 @@ namespace HorrorOnline.Core.DTO
 
         [DisplayName("Etiquetas")]
         [Required]
-        public IEnumerable<Guid>? TagIds { get; set; }
+        public IEnumerable<TagResponse>? Tags { get; set; }
 
         public Story ToStory()
         {
@@ -34,7 +34,6 @@ namespace HorrorOnline.Core.DTO
                 Title = Title,
                 Summary = Summary,
                 Text = Text,
-                TagIds = TagIds,
                 AuthorId = AuthorId
             };
         }

@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HorrorOnline.UI.Controllers
 {
-    [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

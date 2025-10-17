@@ -1,61 +1,61 @@
 ﻿using HorrorOnline.Core.Domain.Entities;
 using HorrorOnline.Core.Domain.RepositoryContracts;
+using HorrorOnline.Infrastructure.DbContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace HorrorOnline.Infrastructure.Repositories
 {
     public class TagRepository : ITagRepository
     {
-        public static List<Tag> Tags = new List<Tag>();
+        private readonly ApplicationDbContext _db;
 
-        public TagRepository()
-        {   
-            //Seed data
-            string tagsJson = File.ReadAllText("tags.json");
-            Tags = JsonSerializer.Deserialize<List<Tag>>(tagsJson);
+        public TagRepository(ApplicationDbContext db)
+        {
+            _db = db;
         }
 
         public async Task<Tag> AddTag(Tag tag)
         {
-            Tags.Add(tag);
+            await _db.Tags.AddAsync(tag);
+            await _db.SaveChangesAsync();
 
             return tag;
         }
 
         public async Task<bool> DeleteTagByID(Guid tagID)
         {
-            Tag? foundTag = Tags.Find(item => item.TagId == tagID);
+            _db.Tags.RemoveRange(_db.Tags.Where(item => item.TagId == tagID));
 
-            if (foundTag == null)
-            {
-                return false;
-            }
-            else
-            {
-                return Tags.Remove(foundTag);
-            }
+            int rowsDeleted = await _db.SaveChangesAsync();
+
+            return rowsDeleted > 0;
         }
 
         public async Task<IEnumerable<Tag>> GetAllTags()
         {
-            return new List<Tag>(Tags);
+            return await _db.Tags.ToListAsync();
         }
 
         public async Task<Tag?> GetTagByID(Guid tagID)
         {
-            Tag? foundTag = Tags.Find(item => item.TagId == tagID);
+            Tag? foundTag = await _db.Tags
+                .Include(nameof(Story))
+                .FirstOrDefaultAsync(item => item.TagId == tagID);
 
             return foundTag;
         }
 
         public async Task<Tag?> GetTagByName(string name)
         {
-            Tag? foundTag = Tags.Find(item => item.TagName == name);
+            Tag? foundTag = await _db.Tags
+                .Include(nameof(Story))
+                .FirstOrDefaultAsync(item => item.TagName == name);
 
             return foundTag;
         }

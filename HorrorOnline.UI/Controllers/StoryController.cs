@@ -5,6 +5,7 @@ using HorrorOnline.Core.ServiceContracts.Tags;
 using HorrorOnline.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HorrorOnline.UI.Controllers
 {
@@ -29,6 +30,7 @@ namespace HorrorOnline.UI.Controllers
         }
 
         [Route("/")]
+        [AllowAnonymous]
         public async Task<ActionResult> Index()
         {
             IEnumerable<StoryResponse> stories = await _storyGetterService.GetAllStories();
@@ -38,6 +40,7 @@ namespace HorrorOnline.UI.Controllers
 
         [Route("[action]/{storyID}")]
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> Details(Guid storyID)
         {
             StoryResponse? storyToDisplay = await _storyGetterService.GetStoryByID(storyID);
@@ -50,6 +53,7 @@ namespace HorrorOnline.UI.Controllers
 
         [Route("[action]")]
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> SearchForm()
         {
             return View();
@@ -57,6 +61,7 @@ namespace HorrorOnline.UI.Controllers
 
         [Route("[action]")]
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult> SearchResults(string searchTerm)
         {
             IEnumerable<StoryResponse> stories = await _storyGetterService.GetSelectedStories(searchTerm, nameof(StoryResponse.Title));
@@ -88,7 +93,7 @@ namespace HorrorOnline.UI.Controllers
                 Title = storyWithTagsModel.Title,
                 Summary = storyWithTagsModel.Summary,
                 Text = storyWithTagsModel.Text,
-                TagIds = await TagParser(storyWithTagsModel.Tags),
+                Tags = await TagParser(storyWithTagsModel.Tags),
                 //TODO retrieve author form authentication
                 AuthorId = Guid.NewGuid(),
             };
@@ -113,18 +118,18 @@ namespace HorrorOnline.UI.Controllers
         /// </summary>
         /// <param name="tagsString">String containing tags names separated by commas</param>
         /// <returns></returns>
-        private async Task<ICollection<Guid>?> TagParser(string tagsString)
+        private async Task<ICollection<TagResponse>?> TagParser(string tagsString)
         {
             if (string.IsNullOrEmpty(tagsString))
                 return null;
 
             List<string> stringTags = tagsString.Split(',').ToList();
 
-            ICollection<Guid> returnTags = new List<Guid>();
+            ICollection<TagResponse> returnTags = new List<TagResponse>();
             stringTags.ForEach(async tag =>
             {
                 tag.Trim();
-                returnTags.Add( (await GetOrAddTag(tag)).TagId );
+                returnTags.Add( await GetOrAddTag(tag) );
             });
 
             return returnTags;
