@@ -1,10 +1,8 @@
-﻿using HorrorOnline.Core.Domain.Entities;
-using HorrorOnline.Core.DTO;
+﻿using HorrorOnline.Core.DTO;
 using HorrorOnline.Core.ServiceContracts.Stories;
 using HorrorOnline.Core.ServiceContracts.Tags;
 using HorrorOnline.UI.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 
 namespace HorrorOnline.UI.Controllers

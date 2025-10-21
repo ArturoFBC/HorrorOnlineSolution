@@ -37,7 +37,7 @@ namespace HorrorOnline.UI.StartupExtensions
             // Authorization
             services.AddAuthorization(options =>
             {
-                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+              /*  options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();*/
 
                 options.AddPolicy("NotAuthenticated", policy =>
                 {

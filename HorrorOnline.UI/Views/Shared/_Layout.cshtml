@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" />
-    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.svg" />
 </head>
 
 <body class="text-white">
@@ -83,32 +83,32 @@
 
         </div>
 
-        <svg viewBox="0 0 640 640" class="topbar-icon" fill="rgb(240, 240, 240)"><path d="M240 192C240 147.8 275.8 112 320 112C364.2 112 400 147.8 400 192C400 236.2 364.2 272 320 272C275.8 272 240 236.2 240 192zM448 192C448 121.3 390.7 64 320 64C249.3 64 192 121.3 192 192C192 262.7 249.3 320 320 320C390.7 320 448 262.7 448 192zM144 544C144 473.3 201.3 416 272 416L368 416C438.7 416 496 473.3 496 544L496 552C496 565.3 506.7 576 520 576C533.3 576 544 565.3 544 552L544 544C544 446.8 465.2 368 368 368L272 368C174.8 368 96 446.8 96 544L96 552C96 565.3 106.7 576 120 576C133.3 576 144 565.3 144 552L144 544z" /></svg>
+		<partial name="PartialViews/AccountPartialView" />
 
-        <div  style="margin: -7px 50px; width: stretch; align-self:center;align-content:flex-start; overflow: clip">
-            <svg width="1452" height="14" viewBox="0 0 1452 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_dg_70_118)">
-                    <path d="M4 5H1447.5" stroke="#AB5C23" stroke-width="2" />
-                </g>
-                <defs>
-                    <filter id="filter0_dg_70_118" x="0" y="0" width="1451.5" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                        <feOffset dy="4" />
-                        <feGaussianBlur stdDeviation="2" />
-                        <feComposite in2="hardAlpha" operator="out" />
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_118" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_118" result="shape" />
-                        <feTurbulence type="fractalNoise" baseFrequency="0.046948358416557312 0.046948358416557312" numOctaves="3" seed="1369" />
-                        <feDisplacementMap in="shape" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
-                        <feMerge result="effect2_texture_70_118">
-                            <feMergeNode in="displacedImage" />
-                        </feMerge>
-                    </filter>
-                </defs>
-            </svg>
-
+        <div style="margin: -7px 50px; width: stretch; align-self:center;align-content:flex-start; overflow: clip">
+            
+			<svg width="1452" height="14" viewBox="0 0 1452 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_dg_70_118)">
+					<path d="M4 5H1447.5" stroke="#AB5C23" stroke-width="2" />
+				</g>
+				<defs>
+					<filter id="filter0_dg_70_118" x="0" y="0" width="1451.5" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix" />
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feComposite in2="hardAlpha" operator="out" />
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_118" />
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_118" result="shape" />
+						<feTurbulence type="fractalNoise" baseFrequency="0.046948358416557312 0.046948358416557312" numOctaves="3" seed="1369" />
+						<feDisplacementMap in="shape" scale="8" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+						<feMerge result="effect2_texture_70_118">
+							<feMergeNode in="displacedImage" />
+						</feMerge>
+					</filter>
+				</defs>
+			</svg>
 		</div>
     </header>
 
