@@ -4,21 +4,18 @@ using HorrorOnline.Core.Domain.RepositoryContracts;
 using HorrorOnline.Core.DTO;
 using HorrorOnline.Core.ServiceContracts.Stories;
 using HorrorOnline.Core.ServiceContracts.Tags;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HorrorOnline.Core.Services.Stories
 {
     public class StoryAdderService : IStoryAdderService
     {
         public readonly IStoryRepository _storyRepository;
+        public readonly ITagRepository _tagRepository;
 
-        public StoryAdderService(IStoryRepository storyRepository)
+        public StoryAdderService(IStoryRepository storyRepository, ITagRepository tagRepository)
         {
             _storyRepository = storyRepository;
+            _tagRepository = tagRepository;
         }
 
         public async Task<StoryResponse> AddStory(StoryAddRequest storyAddRequest)
@@ -26,6 +23,18 @@ namespace HorrorOnline.Core.Services.Stories
             Story storyToAdd = storyAddRequest.ToStory();
             storyToAdd.StoryId = Guid.NewGuid();
             storyToAdd.DateUploaded = DateTime.Now;
+            storyToAdd.Tags = new List<Tag>();
+
+            if (storyAddRequest.Tags != null)
+            {
+                foreach (TagResponse tagResponse in storyAddRequest.Tags)
+                {
+                    Tag? newTag = await _tagRepository.GetTagByID(tagResponse.TagId);
+
+                    if (newTag is not null)
+                        storyToAdd.Tags.Add(newTag);
+                }
+            }
 
             Story addedStory = await _storyRepository.AddStory(storyToAdd);
 

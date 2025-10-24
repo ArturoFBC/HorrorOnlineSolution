@@ -1,9 +1,12 @@
-﻿using HorrorOnline.Core.DTO;
+﻿using HorrorOnline.Core.Domain.Entities.IdentityEntities;
+using HorrorOnline.Core.DTO;
 using HorrorOnline.Core.ServiceContracts.Stories;
 using HorrorOnline.Core.ServiceContracts.Tags;
 using HorrorOnline.UI.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace HorrorOnline.UI.Controllers
 {
@@ -17,7 +20,9 @@ namespace HorrorOnline.UI.Controllers
         private readonly ITagAdderService _tagAdderService;
         private readonly ITagGetterService _tagGetterService;
 
-        public StoryController(IStoryAdderService storyAdderService, IStoryGetterService storyGetterService, IStoryDeleterService storyDeleterService, ITagAdderService tagAdderService, ITagGetterService tagGetterService)
+        private UserManager<ApplicationUser> _userManager;
+
+        public StoryController(IStoryAdderService storyAdderService, IStoryGetterService storyGetterService, IStoryDeleterService storyDeleterService, ITagAdderService tagAdderService, ITagGetterService tagGetterService, UserManager<ApplicationUser> userManager)
         {
             _storyAdderService = storyAdderService;
             _storyGetterService = storyGetterService;
@@ -25,6 +30,8 @@ namespace HorrorOnline.UI.Controllers
 
             _tagAdderService = tagAdderService;
             _tagGetterService = tagGetterService;
+
+            _userManager = userManager;
         }
 
         [Route("/")]
@@ -86,18 +93,25 @@ namespace HorrorOnline.UI.Controllers
                 return View(storyWithTagsModel);
             }
 
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                ViewBag.Errors = new List<string>() { "No se pudo encontrar el usuario. Accede como usuario para poder añadirte como autor al relato." };
+
+                return View(storyWithTagsModel);
+            }
+
             StoryAddRequest storyAddRequest = new StoryAddRequest()
             {
                 Title = storyWithTagsModel.Title,
                 Summary = storyWithTagsModel.Summary,
                 Text = storyWithTagsModel.Text,
                 Tags = await TagParser(storyWithTagsModel.Tags),
-                //TODO retrieve author form authentication
-                AuthorId = Guid.NewGuid(),
+                AuthorId = user.Id
             };
 
             StoryResponse storyAdded = await _storyAdderService.AddStory(storyAddRequest);
-
 
             try
             {
@@ -116,7 +130,7 @@ namespace HorrorOnline.UI.Controllers
         /// </summary>
         /// <param name="tagsString">String containing tags names separated by commas</param>
         /// <returns></returns>
-        private async Task<ICollection<TagResponse>?> TagParser(string tagsString)
+        private async Task<ICollection<TagResponse>?> TagParser(string? tagsString)
         {
             if (string.IsNullOrEmpty(tagsString))
                 return null;
@@ -124,11 +138,11 @@ namespace HorrorOnline.UI.Controllers
             List<string> stringTags = tagsString.Split(',').ToList();
 
             ICollection<TagResponse> returnTags = new List<TagResponse>();
-            stringTags.ForEach(async tag =>
+            foreach (string stringTag in stringTags)
             {
-                tag.Trim();
-                returnTags.Add( await GetOrAddTag(tag) );
-            });
+                stringTag.Trim();
+                returnTags.Add( await GetOrAddTag(stringTag) );
+            }
 
             return returnTags;
         }
@@ -146,21 +160,14 @@ namespace HorrorOnline.UI.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            throw new NotImplementedException();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            throw new NotImplementedException();
         }
     }
 }

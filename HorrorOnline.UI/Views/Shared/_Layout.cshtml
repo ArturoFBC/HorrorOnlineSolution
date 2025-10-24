@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HorrorOnline</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" />
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.svg" />
 </head>
@@ -116,15 +115,6 @@
         @RenderBody()
     </div>
 
-    <script>
-        function myFunction() {
-         // var x = document.getElementById("navbar");
-         // if (x.className === "navbar") {
-         //   x.className += " responsive";
-         // } else {
-         //   x.className = "navbar";
-         // }
-        }
-    </script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -30,7 +30,7 @@ namespace HorrorOnline.Infrastructure.Repositories
 
         public async Task<bool> DeleteTagByID(Guid tagID)
         {
-            _db.Tags.RemoveRange(_db.Tags.Where(item => item.TagId == tagID));
+            _db.Tags.RemoveRange(_db.Tags.Where(tag => tag.TagId == tagID));
 
             int rowsDeleted = await _db.SaveChangesAsync();
 
@@ -45,8 +45,8 @@ namespace HorrorOnline.Infrastructure.Repositories
         public async Task<Tag?> GetTagByID(Guid tagID)
         {
             Tag? foundTag = await _db.Tags
-                .Include(nameof(Story))
-                .FirstOrDefaultAsync(item => item.TagId == tagID);
+                .Include(tag => tag.Stories)
+                .FirstOrDefaultAsync(tag => tag.TagId == tagID);
 
             return foundTag;
         }
@@ -54,8 +54,8 @@ namespace HorrorOnline.Infrastructure.Repositories
         public async Task<Tag?> GetTagByName(string name)
         {
             Tag? foundTag = await _db.Tags
-                .Include(nameof(Story))
-                .FirstOrDefaultAsync(item => item.TagName == name);
+                .Include(tag => tag.Stories)
+                .FirstOrDefaultAsync(tag => tag.TagName == name.ToLower());
 
             return foundTag;
         }

@@ -12,13 +12,14 @@ namespace HorrorOnline.Core.DTO
     {
         [Required]
         [Length(Tag.MinTagLength, Tag.MaxTagLength)]
+        [DataType(DataType.Text)]
         public string? TagName { get; set; }
 
         public Tag ToTag()
         {
             return new Tag()
             {
-                TagName = TagName
+                TagName = TagName.ToLower()
             };
         }
     }

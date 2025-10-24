@@ -1,14 +1,16 @@
 ﻿using HorrorOnline.Core.Domain.Entities.IdentityEntities;
 using HorrorOnline.Core.DTO;
 using HorrorOnline.Core.Enum;
+using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace HorrorOnline.UI.Controllers
 {
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -31,6 +33,7 @@ namespace HorrorOnline.UI.Controllers
 
         [HttpPost]
         [Authorize("NotAuthenticated")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(UserAddRequest userAddRequest)
         {
 
@@ -73,7 +76,7 @@ namespace HorrorOnline.UI.Controllers
 
                 await _signInManager.SignInAsync(newUser, isPersistent: false);
 
-                return RedirectToAction(nameof(StoryController.Index), "Persons");
+                return RedirectToAction(nameof(StoryController.Index), controllerName: "Story");
             }
             else
             {
@@ -98,6 +101,78 @@ namespace HorrorOnline.UI.Controllers
             }
         }
 
+        [HttpGet]
+        [Authorize("NotAuthenticated")]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize("NotAuthenticated")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(UserLoginRequest userLoginRequest, string? ReturnUrl)
+        {
+            if (ModelState.IsValid == false)
+            {
+                ViewBag.Errors = ModelState.Values.SelectMany(error => error.Errors).Select(error => error.ErrorMessage);
+
+                return View(userLoginRequest);
+            }
+
+            SignInResult signInResult = await _signInManager.PasswordSignInAsync(userLoginRequest.UserName, userLoginRequest.Password, isPersistent: userLoginRequest.RememberMe, lockoutOnFailure: false);
+
+            if (signInResult.Succeeded == false)
+            {
+                string loginError = string.Empty;
+
+                if (signInResult.IsLockedOut)
+                {
+                    ModelState.AddModelError("Login", "Acceso bloqueado");
+                }
+                if (signInResult.RequiresTwoFactor)
+                {
+                    ModelState.AddModelError("Login", "Requiere acceso de doble factor");
+                }
+                if (signInResult.IsNotAllowed)
+                {
+                    ModelState.AddModelError("Login", "Invalid email or password.");
+                }
+
+                return View(userLoginRequest);
+            }
+
+            if (string.IsNullOrEmpty(ReturnUrl) == false &&
+    Url.IsLocalUrl(ReturnUrl))
+            {
+                //For security reasons, it has to be local so other details about the log in are not sent to other websites.
+                return LocalRedirect(ReturnUrl);
+            }
+
+            return RedirectToAction(nameof(StoryController.Index), controllerName: "Story");
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> LogOut(string? ReturnUrl)
+        {
+            await _signInManager.SignOutAsync();
+
+            if (string.IsNullOrEmpty(ReturnUrl) == false &&
+Url.IsLocalUrl(ReturnUrl))
+            {
+                //For security reasons, it has to be local so other details about the log in are not sent to other websites.
+                return LocalRedirect(ReturnUrl);
+            }
+
+            return RedirectToAction(nameof(StoryController.Index), controllerName: "Story");
+        }
+
+        #region VALIDATION_CALLS
+        /// <summary>
+        /// This is called from the form (client side) to check if the email they are entering is already registered
+        /// </summary>
+        /// <param name="email">Email to be checked</param>
+        /// <returns>Whether or not the email can be added in the user database</returns>
         [AllowAnonymous]
         public async Task<IActionResult> IsEmailAlreadyRegistered(string email)
         {
@@ -106,6 +181,11 @@ namespace HorrorOnline.UI.Controllers
             return Json(user is null);
         }
 
+        /// <summary>
+        /// This is called from the form (client side) to check if the userName they are entering is already registered
+        /// </summary>
+        /// <param name="userName">userName to be checked</param>
+        /// <returns>Whether or not the userName can be added in the user database</returns>
         [AllowAnonymous]
         public async Task<IActionResult> IsUserNameAlreadyRegistered(string userName)
         {
@@ -113,5 +193,6 @@ namespace HorrorOnline.UI.Controllers
 
             return Json(user is null);
         }
+        #endregion
     }
 }

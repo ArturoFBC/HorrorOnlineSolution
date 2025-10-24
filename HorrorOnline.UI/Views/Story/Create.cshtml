@@ -12,28 +12,28 @@
 		<label asp-for="Title"></label>
 		<input asp-for="Title" class="w-stretch"></input>
 	</div>
-	<span asp-validation-for="Title"></span>
+	<span class="val-error" asp-validation-for="Title"></span>
 
 	<label asp-for="Summary" ></label>
 	<textarea asp-for="Summary" class="margin-bottom-8"></textarea>
-	<span asp-validation-for="Summary"></span>
+	<span class="val-error" asp-validation-for="Summary"></span>
 
 	<label asp-for="Text"></label>
 	<textarea asp-for="Text" class="story-text-input margin-bottom-8"></textarea>
-	<span asp-validation-for="Text"></span>
+	<span class="val-error" asp-validation-for="Text"></span>
 
 	<div class="flex gap-16 margin-bottom-8 w-stretch">
 		<label asp-for="Tags"></label>
 		<input asp-for="Tags" class="w-stretch"></input>
 	</div>
-	<span asp-validation-for="Tags"></span>
+	<span class="val-error" asp-validation-for="Tags"></span>
 
 	<button type="submit" class="base-font text-white">Mandar relato</button>
 	@if (ViewBag.Errors != null)
 	{
 		@foreach (string error in ViewBag.Errors)
 		{
-			<p style="color:red">@error</p>
+			<p class="val-error">@error</p>
 		}
 	}
 </form>

@@ -253,7 +253,22 @@ header {
         margin: 0.5em 0px;
     }
 
-/* Búsqueda */
+/* Search */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 16px;
+}
+
+.form-field{
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 16px;
+}
+
 .search-form{
     margin: 16px;
 }
@@ -274,6 +289,10 @@ button {
     button:active {
         box-shadow: 0px 0px 6px whitesmoke;
     }
+
+.text-button {
+    padding: 8px 12px 8px 12px;
+}
 
 select, input, textarea {
     color: whitesmoke;
@@ -300,6 +319,10 @@ textarea {
 
 .margin-bottom-8 {
     margin-bottom: 8px;
+}
+
+.val-error{
+    color:red;
 }
 
 /* Text message */

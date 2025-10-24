@@ -4,47 +4,45 @@
 }
 
 
-<form asp-controller="Account" asp-action="Register" method="post" class="flex wrap gap-16 flex-column align-items-center justify-self-center">
-	<div class="flex flex-column gap-16">
+<form asp-controller="Account" asp-action="Register" method="post" >
 		<h1>Crear cuenta</h1>
 
-		<div class="flex gap-16 margin-bottom-8 w-stretch">
+	<div class="form-field">
 			<label asp-for="UserName"></label>
-			<input asp-for="UserName" class="w-stretch"/>
+			<input asp-for="UserName"/>
 		</div>
-		<span asp-validation-for="UserName"></span>
+		<span class="val-error" asp-validation-for="UserName"></span>
 
-		<div class="flex gap-16 margin-bottom-8 w-stretch">
+	<div class="form-field">
 			<label asp-for="Email"></label>
-			<input asp-for="Email" class="w-stretch"/>
+			<input asp-for="Email"/>
 		</div>
-		<span asp-validation-for="Email"></span>
+		<span class="val-error" asp-validation-for="Email"></span>
 
-		<div class="flex gap-16 margin-bottom-8 w-stretch">
+	<div class="form-field">
 			<label asp-for="Password"></label>
-			<input asp-for="Password" class="w-stretch"/>
+			<input asp-for="Password"/>
 		</div>
-		<span asp-validation-for="Password"></span>
+		<span class="val-error" asp-validation-for="Password"></span>
 
-		<div class="flex gap-16 margin-bottom-8 w-stretch">
+	<div class="form-field">
 			<label asp-for="ConfirmPassword"></label>
-			<input asp-for="ConfirmPassword" class="w-stretch" />
+			<input asp-for="ConfirmPassword"/>
 		</div>
-		<span asp-validation-for="ConfirmPassword"></span>
+		<span class="val-error" asp-validation-for="ConfirmPassword"></span>
 
-		<button type="submit" class="base-font text-white">Registrar usuario</button>
+		<button type="submit" class="base-font text-white text-button">Registrar usuario</button>
 		<div asp-validation-summary="All"></div>
 
 		@if (ViewBag.Error is not null)
 		{
-			<div class="text-red ml">
+			<div class="text-red">
 				<ul>
 					@foreach (string error in ViewBag.Errors)
 					{
-						<li class="ml">@error</li>
+						<li >@error</li>
 					}
 				</ul>
 			</div>
 		}
-	</div>
 </form>

@@ -1,0 +1,45 @@
+﻿@model UserLoginRequest
+@{
+	ViewBag.Title = "Acceder";
+}
+
+
+<form asp-controller="Account" asp-action="Login" method="post">
+		<h1>Acceder</h1>
+
+		<div>
+		<div class="form-field">
+				<label asp-for="UserName"></label>
+				<input asp-for="UserName"/>
+			</div>
+			<span class="val-error" asp-validation-for="UserName"></span>
+		</div>
+		<div>
+		<div class="form-field">
+				<label asp-for="Password"></label>
+				<input asp-for="Password"/>
+			</div>
+			<span class="val-error" asp-validation-for="Password"></span>
+		</div>
+		<div>
+		<div class="form-field">
+				<label asp-for="RememberMe"></label>
+				<input asp-for="RememberMe"/>
+			</div>
+			<span class="val-error" asp-validation-for="RememberMe"></span>
+		</div>
+	<button type="submit" class="base-font text-white text-button">Acceder</button>
+		<div asp-validation-summary="All"></div>
+
+		@if (ViewBag.Error is not null)
+		{
+			<div class="text-red">
+				<ul>
+					@foreach (string error in ViewBag.Errors)
+					{
+						<li >@error</li>
+					}
+				</ul>
+			</div>
+		}
+</form>

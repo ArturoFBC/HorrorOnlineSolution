@@ -9,6 +9,7 @@ namespace HorrorOnline.Core.DTO
 
         [Required]
         [Length(Tag.MinTagLength, Tag.MaxTagLength)]
+
         public string TagName { get; set; } = string.Empty;
 
         public ICollection<Story>? Stories { get; set; }
@@ -18,9 +19,10 @@ namespace HorrorOnline.Core.DTO
     {
         public static TagResponse ToTagResponse(this Tag tag)
         {
-            return new TagResponse {
+            return new TagResponse
+            {
                 TagId = tag.TagId,
-                TagName = tag.TagName,
+                TagName = tag.TagName.ToLower(),
                 Stories = tag.Stories
             };
         }
