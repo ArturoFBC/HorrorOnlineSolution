@@ -13,11 +13,13 @@ namespace HorrorOnline.UI.Models
 
         [DisplayName("Resumen")]
         [StringLength(Story.MaxSummaryLength, ErrorMessage = "El resumen es demasiado largo")]
+        [DataType(DataType.MultilineText)]
         public string? Summary { get; set; }
 
         [DisplayName("Relato")]
         [StringLength(Story.MaxTextLength, MinimumLength = Story.MinTextLength, ErrorMessage = "El relato es demasiado largo o corto")]
         [Required(ErrorMessage = "El texto del relato está en blanco")]
+        [DataType(DataType.MultilineText)]
         public string? Text { get; set; }
 
         [DisplayName("Etiquetas")]

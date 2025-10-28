@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB5A0BF9-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorOnline.ServiceTest", "HorrorOnline.ServiceTest\HorrorOnline.ServiceTest.csproj", "{A20AEC28-3E13-4C97-A111-208A8241F57A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{054C98EA-57FA-43D4-9992-559C4EDAD508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A20AEC28-3E13-4C97-A111-208A8241F57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054C98EA-57FA-43D4-9992-559C4EDAD508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054C98EA-57FA-43D4-9992-559C4EDAD508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054C98EA-57FA-43D4-9992-559C4EDAD508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054C98EA-57FA-43D4-9992-559C4EDAD508}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8567B4FE-5E33-4F54-B588-860902171CBA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A20AEC28-3E13-4C97-A111-208A8241F57A} = {EB5A0BF9-EE5F-439A-9EBC-50835451627B}
+		{054C98EA-57FA-43D4-9992-559C4EDAD508} = {EB5A0BF9-EE5F-439A-9EBC-50835451627B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0EAAAA71-E6FD-483E-AEF5-2BDB21B064A0}

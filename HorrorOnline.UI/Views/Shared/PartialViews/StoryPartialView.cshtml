@@ -94,13 +94,35 @@
     @if (ViewBag.DisplayMode == "full")
     {
         <div class="flex flex-column text-display">
-            @Html.DisplayFor(model => model.Text)
+            @if (Model.Text is not null)
+            {
+                @foreach (string paragraph in Model.Text)
+                {
+                    <p>@paragraph</p>
+                }
+            }
         </div>
     }
     else
     {
         <div class="flex flex-column text-display summary">
-            @Html.DisplayFor(model => model.Text)
+            @if (Model.Summary is not null)
+            {
+                @foreach (string paragraph in Model.Summary)
+                {
+                    <p>@paragraph</p>
+                }
+            }
+            else
+            {
+                @if (Model.Text is not null)
+                {
+                    @foreach (string paragraph in Model.Text)
+                    {
+                        <p>@paragraph</p>
+                    }
+                }
+            }
         </div>
     }
 

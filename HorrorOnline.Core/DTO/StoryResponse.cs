@@ -14,17 +14,20 @@ namespace HorrorOnline.Core.DTO
 {
     public class StoryResponse
     {
+        public const string ParagraphSeparator = "\n";
+
         public Guid StoryId { get; set; }
 
         public string? Title { get; set; }
 
-        public string? Summary { get; set; }
+        public IEnumerable<string>? Summary { get; set; }
 
-        public string? Text { get; set; }
+
+        public IEnumerable<string>? Text { get; set; }
 
         public DateTime DateUploaded { get; set; }
 
-        public string AuthorName { get; set; }
+        public string? AuthorName { get; set; }
 
         public IEnumerable<TagResponse>? Tags { get; set; }
 
@@ -36,11 +39,19 @@ namespace HorrorOnline.Core.DTO
             {
                 StoryId = StoryId,
                 Title = Title,
-                Summary = Summary,
-                Text = Text,
+                Summary = GetJointString(Text),
+                Text = GetJointString(Summary),
             //    Author = AuthorName,
                 Tags = Tags,
             };
+        }
+
+        private string? GetJointString(IEnumerable<string>? stringList )
+        {
+            if (Text is not null)
+                return string.Join(ParagraphSeparator, Text);
+
+            return null;
         }
     }
 
@@ -52,8 +63,8 @@ namespace HorrorOnline.Core.DTO
             {
                 StoryId = story.StoryId,
                 Title = story.Title,
-                Summary = story.Summary,
-                Text = story.Text,
+                Summary = story.Summary?.Split(StoryResponse.ParagraphSeparator),
+                Text = story.Text?.Split(StoryResponse.ParagraphSeparator),
                 DateUploaded = story.DateUploaded,
                 AuthorName = story.Author?.UserName,
                 Tags = story.Tags?.Select(tag => tag.ToTagResponse()),

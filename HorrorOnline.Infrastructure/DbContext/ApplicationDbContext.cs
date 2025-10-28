@@ -1,17 +1,8 @@
 ﻿using HorrorOnline.Core.Domain.Entities;
 using HorrorOnline.Core.Domain.Entities.IdentityEntities;
-using HorrorOnline.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.Identity.Client;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace HorrorOnline.Infrastructure.DbContext
 {
@@ -50,9 +41,7 @@ namespace HorrorOnline.Infrastructure.DbContext
 
                 story.HasMany(story => story.Tags)
                 .WithMany(tag => tag.Stories)
-                .UsingEntity(
-            r => r.HasOne(typeof(Tag)).WithMany().HasForeignKey("TagsTagId"),
-            l => l.HasOne(typeof(Story)).WithMany().HasForeignKey("StoriesStoryId"));
+                .UsingEntity<StoryTag>();
 
                 story.HasMany(story => story.Reviews)
                 .WithOne(review => review.Story).HasForeignKey(review => review.ReviewId);
@@ -82,17 +71,30 @@ namespace HorrorOnline.Infrastructure.DbContext
         private static void SeedData(ModelBuilder modelBuilder)
         {
             //Seed data
+            DeserializeFromFile<Tag>("tags.json", modelBuilder);
+
             string storiesJson = File.ReadAllText("stories.json");
             List<Story> stories = JsonSerializer.Deserialize<List<Story>>(storiesJson);
 
+            stories.ForEach(story => story.Text = story.Text.Replace("\\n", "\n"));
+
             foreach (Story story in stories)
+            {
                 modelBuilder.Entity<Story>().HasData(story);
+            }
 
-            string tagsJson = File.ReadAllText("tags.json");
-            List<Tag> tags = JsonSerializer.Deserialize<List<Tag>>(tagsJson);
+            DeserializeFromFile<StoryTag>("storyTag.json", modelBuilder);
 
-            foreach (Tag tag in tags)
-                modelBuilder.Entity<Tag>().HasData(tag);
+            DeserializeFromFile<ApplicationUser>("users.json", modelBuilder);
+        }
+
+        private static void DeserializeFromFile<T>(string fileName, ModelBuilder modelBuilder) where T : class
+        {
+            string dataJson = File.ReadAllText(fileName);
+            List<T> dataEntries = JsonSerializer.Deserialize<List<T>>(dataJson);
+
+            foreach (T dataEntry in dataEntries)
+                modelBuilder.Entity<T>().HasData(dataEntry);
         }
     }
 }

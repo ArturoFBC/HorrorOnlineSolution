@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "3401FAEB-E34E-492B-AF07-37DC9B6E1BB1",
+    "UserName": "Emilia Pardo Bazán",
+    "NormalizedUserName": "EMILIA PARDO BAZAN",
+    "ConcurrencyStamp": "A040D128-3A7C-4B0A-93AB-71130EAF5F31",
+    "EmailConfirmed": false
+  },
+  {
+    "Id": "5F8DFF58-8FCD-46D2-BC95-90A73E9F9BE3",
+    "UserName": "Gustavo Adolfo Bécquer",
+    "NormalizedUserName": "GUSTAVO ADOLFO BECQUER",
+    "ConcurrencyStamp": "BA9FE8F2-3343-49EC-A4F7-934047A5D59A",
+    "EmailConfirmed": false
+
+  }
+]
