@@ -7,19 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="stories.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="wwwroot\fonts\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="stories.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="9.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
@@ -33,6 +20,10 @@
   <ItemGroup>
     <ProjectReference Include="..\HorrorOnline.Core\HorrorOnline.Core.csproj" />
     <ProjectReference Include="..\HorrorOnline.Infrastructure\HorrorOnline.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="HorrorOnline.IntegrationTests" />
   </ItemGroup>
 
 </Project>

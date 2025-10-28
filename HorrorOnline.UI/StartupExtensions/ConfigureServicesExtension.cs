@@ -17,6 +17,30 @@ namespace HorrorOnline.UI.StartupExtensions
     {
         public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
+
+
+            // Services and repos
+            services.AddScoped<IStoryAdderService, StoryAdderService>();
+            services.AddScoped<IStoryGetterService, StoryGetterService>();
+            services.AddScoped<IStoryDeleterService, StoryDeleterService>();
+
+            services.AddScoped<IStoryRepository, StoryRepository>();
+
+            services.AddScoped<ITagAdderService, TagAdderService>();
+            services.AddScoped<ITagGetterService, TagGetterService>();
+            services.AddScoped<ITagDeleterService, TagDeleterService>();
+
+            services.AddScoped<ITagRepository, TagRepository>();
+
+            // Database
+            if (environment.IsEnvironment("Test") == false)
+            {
+                IServiceCollection serviceCollection = services.AddDbContext<ApplicationDbContext>(options =>
+                {
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+                });
+            }
+
             // Identity
             services.AddIdentity<ApplicationUser, ApplicationRole>
                 (
@@ -47,28 +71,6 @@ namespace HorrorOnline.UI.StartupExtensions
                     });
                 });
             });
-
-            // Services and repos
-            services.AddScoped<IStoryAdderService, StoryAdderService>();
-            services.AddScoped<IStoryGetterService, StoryGetterService>();
-            services.AddScoped<IStoryDeleterService, StoryDeleterService>();
-
-            services.AddScoped<IStoryRepository, StoryRepository>();
-
-            services.AddScoped<ITagAdderService, TagAdderService>();
-            services.AddScoped<ITagGetterService, TagGetterService>();
-            services.AddScoped<ITagDeleterService, TagDeleterService>();
-
-            services.AddScoped<ITagRepository, TagRepository>();
-
-            // Database
-            if (environment.IsEnvironment("Test") == false)
-            {
-                IServiceCollection serviceCollection = services.AddDbContext<ApplicationDbContext>(options =>
-                {
-                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
-                });
-            }
 
             return services;
         }

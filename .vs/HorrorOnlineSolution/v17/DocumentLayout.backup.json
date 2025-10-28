@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.infrastructure\\horroronline.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|solutionrelative:horroronline.infrastructure\\horroronline.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{054C98EA-57FA-43D4-9992-559C4EDAD508}|IntegrationTests\\IntegrationTests.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\integrationtests\\storycontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{054C98EA-57FA-43D4-9992-559C4EDAD508}|IntegrationTests\\IntegrationTests.csproj|solutionrelative:integrationtests\\storycontrollerintegrationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\domain\\entities\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\domain\\entities\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\story\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\story\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\controllers\\storycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\controllers\\storycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\story\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\story\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\partialviews\\storypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\partialviews\\storypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|solutionrelative:horroronline.infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20AEC28-3E13-4C97-A111-208A8241F57A}|HorrorOnline.ServiceTest\\HorrorOnline.ServiceTest.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.servicetest\\storygetterservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20AEC28-3E13-4C97-A111-208A8241F57A}|HorrorOnline.ServiceTest\\HorrorOnline.ServiceTest.csproj|solutionrelative:horroronline.servicetest\\storygetterservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\partialviews\\accountpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\partialviews\\accountpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\horroronline.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\horroronline.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\startupextensions\\configureservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\startupextensions\\configureservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{054C98EA-57FA-43D4-9992-559C4EDAD508}|IntegrationTests\\IntegrationTests.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\integrationtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{054C98EA-57FA-43D4-9992-559C4EDAD508}|IntegrationTests\\IntegrationTests.csproj|solutionrelative:integrationtests\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|solutionrelative:horroronline.infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\stories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\stories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\story\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\story\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\domain\\entities\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\domain\\entities\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.infrastructure\\repositories\\storyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\tags.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\stories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\stories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\domain\\entities\\identityentities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\domain\\entities\\identityentities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\partialviews\\accountpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\partialviews\\accountpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\dto\\storyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,20 +107,8 @@
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\dto\\storyaddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\partialviews\\storypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\partialviews\\storypartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\controllers\\storycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\controllers\\storycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\dto\\tagresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\dto\\tagresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\story\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\story\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{036D27BB-BE1C-489E-B609-09ED3EFA6135}|HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.infrastructure\\repositories\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,14 +131,6 @@
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\servicecontracts\\stories\\istorygetterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -117,14 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\dto\\useraddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|solutionrelative:horroronline.core\\dto\\useraddrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\startupextensions\\configureservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\startupextensions\\configureservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.ui\\views\\story\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8A79ECB-003F-45AD-9D87-415D5C527623}|HorrorOnline.UI\\HorrorOnline.UI.csproj|solutionrelative:horroronline.ui\\views\\story\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8567B4FE-5E33-4F54-B588-860902171CBA}|HorrorOnline.Core\\HorrorOnline.Core.csproj|d:\\documentos\\proyectos\\dotnet\\horroronlinesolution\\horroronline.core\\domain\\entities\\identityentities\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -161,8 +177,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 206,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 201,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,72 +186,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "SearchResults.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\SearchResults.cshtml",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Story\\SearchResults.cshtml",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\SearchResults.cshtml",
+              "RelativeToolTip": "HorrorOnline.UI\\Views\\Story\\SearchResults.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T15:06:29.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T14:35:34.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StoryGetterServiceTest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.ServiceTest\\StoryGetterServiceTest.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.ServiceTest\\StoryGetterServiceTest.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.ServiceTest\\StoryGetterServiceTest.cs",
+              "RelativeToolTip": "HorrorOnline.ServiceTest\\StoryGetterServiceTest.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwBYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:04:22.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StoryControllerIntegrationTest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\IntegrationTests\\StoryControllerIntegrationTest.cs",
+              "RelativeDocumentMoniker": "IntegrationTests\\StoryControllerIntegrationTest.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\IntegrationTests\\StoryControllerIntegrationTest.cs",
+              "RelativeToolTip": "IntegrationTests\\StoryControllerIntegrationTest.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:43:57.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CustomWebApplicationFactory.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\IntegrationTests\\CustomWebApplicationFactory.cs",
               "RelativeDocumentMoniker": "IntegrationTests\\CustomWebApplicationFactory.cs",
               "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\IntegrationTests\\CustomWebApplicationFactory.cs",
               "RelativeToolTip": "IntegrationTests\\CustomWebApplicationFactory.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T10:24:07.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "stories.json",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\stories.json",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\stories.json",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\stories.json",
-              "RelativeToolTip": "HorrorOnline.UI\\stories.json",
-              "ViewState": "AgIAAAoAAAAAAAAAAABRwA8AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T20:38:22.013Z",
+              "DocumentIndex": 8,
+              "Title": "AccountPartialView.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
+              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T18:05:09.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "tags.json",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\tags.json",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\tags.json",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\tags.json",
-              "RelativeToolTip": "HorrorOnline.UI\\tags.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T20:37:58.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StoryTag.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:30:33.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "RelativeToolTip": "HorrorOnline.Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwCUAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T12:06:40.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "StoryAdderService.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Stories\\StoryAdderService.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Services\\Stories\\StoryAdderService.cs",
@@ -248,46 +277,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccountPartialView.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
-              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\AccountPartialView.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-23T18:05:09.045Z",
+              "DocumentIndex": 14,
+              "Title": "stories.json",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\stories.json",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\stories.json",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\stories.json",
+              "RelativeToolTip": "HorrorOnline.UI\\stories.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T20:38:22.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StoryPartialView.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
-              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAkwGQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-16T10:50:52.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StoryController.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Controllers\\StoryController.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Controllers\\StoryController.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Controllers\\StoryController.cs",
-              "RelativeToolTip": "HorrorOnline.UI\\Controllers\\StoryController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAIwFoAAABHAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "StoryTag.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\StoryTag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T10:56:27.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T20:30:33.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
+              "Title": "tags.json",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\tags.json",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\tags.json",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\tags.json",
+              "RelativeToolTip": "HorrorOnline.UI\\tags.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T20:37:58.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "SearchForm.cshtml",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\SearchForm.cshtml",
               "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Story\\SearchForm.cshtml",
@@ -295,12 +322,11 @@
               "RelativeToolTip": "HorrorOnline.UI\\Views\\Story\\SearchForm.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-14T09:30:17.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T09:30:17.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "TagRepository.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\Repositories\\TagRepository.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\Repositories\\TagRepository.cs",
@@ -313,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "HorrorOnline.UI\\Controllers\\AccountController.cs",
@@ -326,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Account\\Login.cshtml",
@@ -334,83 +360,43 @@
               "RelativeToolTip": "HorrorOnline.UI\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAIBJwCMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T17:26:01.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T17:26:01.366Z"
             }
           ]
         },
         {
-          "DockedWidth": 194,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 199,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HorrorOnline.Infrastructure",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj",
-              "RelativeToolTip": "HorrorOnline.Infrastructure\\HorrorOnline.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-28T10:34:55.214Z",
+              "DocumentIndex": 4,
+              "Title": "StoryPartialView.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
+              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\PartialViews\\StoryPartialView.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T14:48:20.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "Story.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\Story.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\Story.cs",
               "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\Story.cs",
               "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\Story.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwB8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T21:08:31.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StoryRepository.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
-              "RelativeToolTip": "HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwC4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T17:48:41.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T18:17:52.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StoryAddRequest.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T11:00:58.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "StoryResponse.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryResponse.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\StoryResponse.cs",
@@ -418,12 +404,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\DTO\\StoryResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:36:20.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T09:36:20.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "Tag.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\Tag.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\Tag.cs",
@@ -431,155 +416,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\Tag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T18:57:44.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T18:57:44.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StoryUpdateRequest.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T21:09:42.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\Create.cshtml",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Story\\Create.cshtml",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\Create.cshtml",
-              "RelativeToolTip": "HorrorOnline.UI\\Views\\Story\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T10:31:18.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TagResponse.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\TagResponse.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\TagResponse.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\TagResponse.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\DTO\\TagResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T11:16:34.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IStoryGetterService.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T18:05:59.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TagGetterService.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAmwCoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T19:47:37.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserAddRequest.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\UserAddRequest.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\UserAddRequest.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\UserAddRequest.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\DTO\\UserAddRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T11:32:03.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Program.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Program.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Program.cs",
-              "RelativeToolTip": "HorrorOnline.UI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T13:10:15.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "HorrorOnline.UI\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-08T21:27:53.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAEBVwFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-19T09:49:39.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ConfigureServicesExtension.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
-              "RelativeToolTip": "HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T21:18:14.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ApplicationRole.cs",
-              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
-              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
-              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
-              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T11:00:51.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\Index.cshtml",
               "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Story\\Index.cshtml",
@@ -592,7 +433,218 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Program.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Program.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Program.cs",
+              "RelativeToolTip": "HorrorOnline.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T13:10:15.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\Create.cshtml",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Story\\Create.cshtml",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Story\\Create.cshtml",
+              "RelativeToolTip": "HorrorOnline.UI\\Views\\Story\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-22T10:31:18.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StoryController.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Controllers\\StoryController.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Controllers\\StoryController.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Controllers\\StoryController.cs",
+              "RelativeToolTip": "HorrorOnline.UI\\Controllers\\StoryController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAowCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T10:56:27.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "HorrorOnline.UI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T14:44:20.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HorrorOnline.UI",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\HorrorOnline.UI.csproj",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\HorrorOnline.UI.csproj",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\HorrorOnline.UI.csproj",
+              "RelativeToolTip": "HorrorOnline.UI\\HorrorOnline.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-28T14:46:19.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HorrorOnline.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T09:49:39.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StoryAddRequest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\DTO\\StoryAddRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T11:00:58.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfigureServicesExtension.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
+              "RelativeToolTip": "HorrorOnline.UI\\StartupExtensions\\ConfigureServicesExtension.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T21:18:14.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T18:17:52.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StoryRepository.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
+              "RelativeToolTip": "HorrorOnline.Infrastructure\\Repositories\\StoryRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T17:48:41.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StoryUpdateRequest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\DTO\\StoryUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T21:09:42.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TagResponse.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\TagResponse.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\TagResponse.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\TagResponse.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\DTO\\TagResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:16:34.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IStoryGetterService.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryGetterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T18:05:59.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TagGetterService.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\Services\\Tags\\TagGetterService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T19:47:37.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserAddRequest.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\UserAddRequest.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\DTO\\UserAddRequest.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\DTO\\UserAddRequest.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\DTO\\UserAddRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T11:32:03.495Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "HorrorOnline.UI\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.UI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "HorrorOnline.UI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-08T21:27:53.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationRole.cs",
+              "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
+              "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
+              "ToolTip": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
+              "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\IdentityEntities\\ApplicationRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:00:51.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "BookMark.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\BookMark.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\BookMark.cs",
@@ -600,12 +652,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\BookMark.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:02:49.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T09:02:49.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Domain\\Entities\\Review.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Domain\\Entities\\Review.cs",
@@ -613,12 +664,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\Domain\\Entities\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAGBnwBoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T10:22:24.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T10:22:24.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "TagDeleterService.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\Services\\Tags\\TagDeleterService.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\Services\\Tags\\TagDeleterService.cs",
@@ -626,12 +676,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\Services\\Tags\\TagDeleterService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T19:47:45.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T19:47:45.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "ITagGetterService.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Tags\\ITagGetterService.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\ServiceContracts\\Tags\\ITagGetterService.cs",
@@ -639,12 +688,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\ServiceContracts\\Tags\\ITagGetterService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T19:34:35.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T19:34:35.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "IStoryDeleterService.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryDeleterService.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryDeleterService.cs",
@@ -652,12 +700,11 @@
               "RelativeToolTip": "HorrorOnline.Core\\ServiceContracts\\Stories\\IStoryDeleterService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T19:38:16.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T19:38:16.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "ITagDeleterService.cs",
               "DocumentMoniker": "D:\\Documentos\\Proyectos\\dotnet\\HorrorOnlineSolution\\HorrorOnline.Core\\ServiceContracts\\Tags\\ITagDeleterService.cs",
               "RelativeDocumentMoniker": "HorrorOnline.Core\\ServiceContracts\\Tags\\ITagDeleterService.cs",
@@ -665,8 +712,7 @@
               "RelativeToolTip": "HorrorOnline.Core\\ServiceContracts\\Tags\\ITagDeleterService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T19:38:06.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T19:38:06.081Z"
             }
           ]
         }

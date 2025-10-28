@@ -35,6 +35,7 @@ namespace HorrorOnline.UI.Controllers
         }
 
         [Route("/")]
+        [Route("[action]")]
         [AllowAnonymous]
         public async Task<ActionResult> Index()
         {

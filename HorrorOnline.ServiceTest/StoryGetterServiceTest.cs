@@ -28,6 +28,13 @@ namespace HorrorOnline.ServiceTest
             _storyGetterService = new StoryGetterService(_storyRepositoryMock.Object);
 
             _fixture = new Fixture();
+            LimitFixtureRecursionDepthTo(3);
+        }
+
+        private void LimitFixtureRecursionDepthTo(int recursionLimit)
+        {
+            _fixture.Behaviors.OfType<ThrowingRecursionBehavior>().ToList().ForEach(b => _fixture.Behaviors.Remove(b));
+            _fixture.Behaviors.Add(new OmitOnRecursionBehavior(recursionLimit));
         }
 
         #region GetAllStories
