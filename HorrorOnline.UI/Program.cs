@@ -32,5 +32,7 @@ app.UseAntiforgery();
 app.MapControllers();
 
 app.Run();
+//Server=tcp:horroronline-dbdbserver.database.windows.net;Authentication=Active Directory Default;Database=HorrorOnline.db;
+//    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HorrorOnlineDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
 
 public partial class Program { }

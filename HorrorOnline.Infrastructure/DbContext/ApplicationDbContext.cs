@@ -1,6 +1,8 @@
 ﻿using HorrorOnline.Core.Domain.Entities;
 using HorrorOnline.Core.Domain.Entities.IdentityEntities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
@@ -16,9 +18,10 @@ namespace HorrorOnline.Infrastructure.DbContext
 
         public virtual DbSet<BookMark> BookMarks { get; set; }
 
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions options, IHttpContextAccessor accessor) : base(options)
         {
-        
+            var conn = Database.GetDbConnection() as SqlConnection;
+            conn.AccessToken = accessor.HttpContext.Request.Headers["X-MS-TOKEN-AAD-ACCESS-TOKEN"];
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
